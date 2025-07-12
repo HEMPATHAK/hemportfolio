@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hem Pathak's personal portfolio. Computer Science graduate passionate about embedded systems, AI, and software engineering. Explore my projects, resume, and contact info.">
+  <title>Hem Pathak | Embedded Systems, IoT & Software Engineer Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pzwTeFn6lE/4XVr0OytxR4gq+EpJ+FZspVq5A3NfQn7ZbT1lVqWwD0ZQyXwVn3cAJu0dglFxgkG+h7H5Qn+Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Your main stylesheet -->
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul id="navbar">
+      <li><a href="#intro">Home</a></li>
+      <li><a href="./resume.html" target="_blank">Resume</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#hobbies-interest">Beyond Coding</a></li>
+      <li><a href="#contactme">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <div class="nav-spacer"></div>
+
+  <main>
+    <!-- INTRO SECTION -->
+    <section id="intro">
+      <div>
+        <img class="profilephoto" src="./images/Profile.png" alt="Hem Pathak Profile Photo">
+      </div>
+      <div class="my-personal-text">
+        <h1>Hi, I'm Hem Pathak</h1>
+        <p>
+          I’m a Computer Science and Engineering graduate from Amity University
+          Mumbai with a strong passion for turning technology into real-world
+          solutions. Whether it’s building assistive devices for the visually
+          impaired, creating geospatial analytics tools, or crafting clean web
+          applications, I believe in tech that makes life better.
+        </p>
+        <p>
+          I’ve recently graduated with a CGPA of 7.81 and secured 8.43 SGPA in my
+          final semester. I’m currently preparing for GATE 2026 and exploring
+          opportunities as a system software engineer.
+        </p>
+        <a href="./resume.html" target="_blank" class="resume-button">View My Resume</a>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="aboutme">
+      <h2>About Me</h2>
+      <p>
+        Beyond coding, I’m someone who loves exploring new ideas, staying
+        curious, and sharing knowledge.
+      </p>
+      <ul>
+        <li>Spiritual talks inspire me—especially speakers like Aniruddhacharya Ji and BK Shivani.</li>
+        <li>I’m fascinated by ISRO’s missions and India’s growing space journey.</li>
+        <li>Yoga, morning walks, and fitness keep me energetic.</li>
+        <li>I enjoy diving into tech blogs, experimenting with new tools, and creating tutorials.</li>
+      </ul>
+      <p>My ultimate goal is to create technology that truly helps people.</p>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <h2>Here’s a glimpse of some projects I’ve worked on:</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Smart Blind Stick for Automated Alert Detection</h3>
+          <ul>
+            <li>ESP32-based smart stick for visually impaired users.</li>
+            <li>Sensors like Ultrasonic, ToF, GPS, Flame detection.</li>
+            <li>Real-time alerts via SMS and Firebase.</li>
+            <li>Android Jetpack Compose app for caregivers with live tracking and alert logs.</li>
+            <li>SD card logging and manual SOS buttons.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <h3>Satellite NDVI Time-Series Viewer</h3>
+          <ul>
+            <li>Flask-based tool to visualize NDVI data from NASA MODIS and GeoTIFF.</li>
+            <li>Time-slider, opacity control, PNG export, and NDVI stats.</li>
+            <li>Integrated with Leaflet.js for map views.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <h3>Phone Number Information Finder</h3>
+          <ul>
+            <li>Flask app using phonenumbers library.</li>
+            <li>Detects carrier, region, and timezone.</li>
+            <li>Simple UI with plans for map views and carrier logos.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <h3>Language Learning Assistant for Deaf</h3>
+          <ul>
+            <li>Python GUI with sign language videos and voice-to-text conversion.</li>
+            <li>Designed for better communication and accessibility.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <h3>Dynamic Malls of Mumbai Website</h3>
+          <ul>
+            <li>HTML/CSS/JS + Bootstrap website.</li>
+            <li>Highlights top 10 malls in Mumbai with tourist information and images.</li>
+            <li>Fully responsive layout.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <h3>Tip Calculator (Android Mini Project)</h3>
+          <ul>
+            <li>Kotlin Android app for calculating tips and splitting bills.</li>
+            <li>Simple and intuitive UI.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOBBIES SECTION -->
+    <section id="hobbies-interest">
+      <h2>Beyond Coding</h2>
+      <ul>
+        <li>Listening to spiritual talks and motivational speakers.</li>
+        <li>Exploring assistive technology and IoT solutions.</li>
+        <li>Following India’s space program and ISRO updates.</li>
+        <li>Practicing yoga and maintaining fitness routines.</li>
+        <li>Reading tech blogs and sharing knowledge through tutorials.</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contactme">
+      <h3>
+        <img src="./images/phone.png" alt="Phone Icon" class="icon">
+        Phone: <a href="tel:+917218579047">+91-7218579047</a>
+      </h3>
+      <h3>
+        <img src="./images/email.png" alt="Email Icon" class="icon">
+        Email: <a href="mailto:pathakhem397@gmail.com">pathakhem397@gmail.com</a>
+      </h3>
+      <h3>
+        <img src="./images/linkedin.png" alt="LinkedIn Icon" class="icon">
+        LinkedIn: <a href="http://linkedin.com/in/hem-pathak-9708a3180" target="_blank" rel="noopener noreferrer">Connect to LinkedIn</a>
+      </h3>
+      <h3>
+        <img src="./images/github.png" alt="GitHub Icon" class="icon">
+        GitHub: <a href="http://github.com/hemant587300" target="_blank" rel="noopener noreferrer">Projects on Github</a>
+      </h3>
+      <h3>
+        <img src="./images/location.png" alt="Location Icon" class="icon">
+        Location: Choti Mukhani, Haldwani, Uttarakhand, India
+      </h3>
+      <p>Let’s collaborate on exciting projects or simply chat about tech, space, or innovation!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Hem Pathak. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const burger = document.querySelector('.hamburger');
+    const nav = document.querySelector('#navbar');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('mobile');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+/* === Root Variables for colors and typography === */
+:root {
+  --primary-dark: #023047;
+  --primary-light: #8ECAE6;
+  --secondary: #219EBC;
+  --accent: #FFB703;
+  --light-text: #F0F0F0;
+  --white: #FFFFFF;
+  --text-color: #333333;
+  --body-bg: #f5f5f5;
+  --shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* === Reset & Global === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--body-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* === Header, Nav, Footer === */
+header,
+footer {
+  background-color: var(--primary-dark);
+  color: var(--white);
+  padding: 12px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+  margin: 10px 0;
+}
+
+/* === Navigation === */
+nav {
+  background-color: var(--primary-dark);
+  padding: 10px 20px;
+  position: relative;
+}
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--white);
+  transition: all 0.3s ease;
+}
+
+/* Navigation links */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+nav a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* === Mobile Nav === */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--primary-dark);
+    padding: 15px 0;
+  }
+
+  nav ul.mobile {
+    display: flex;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+  }
+}
+
+/* === Main Layout === */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: var(--white);
+  padding: 40px 30px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-dark);
+  font-size: 1.6rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--accent);
+  margin-top: 5px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: var(--accent);
+  margin: 30px 0;
+}
+
+ul, ol {
+  margin-left: 25px;
+  line-height: 1.8;
+}
+
+ul li, ol li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+a {
+  color: var(--secondary);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+footer {
+  font-size: 0.9rem;
+  margin-top: 30px;
+  padding: 15px 10px;
+}
+header p {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: var(--light-text);
+}

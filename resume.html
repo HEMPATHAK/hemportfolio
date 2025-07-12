@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hem Pathak | Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/resume.css">
+</head>
+<body>
+  <header>
+  <h1>Hem Pathak's Resume</h1>
+  <p>Computer Science Graduate | Embedded Systems & Software Engineer</p>
+</header>
+
+  <nav>
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul id="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#internship">Internship</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="profile">
+      <h2>🧑‍💼 Profile Summary / Objective</h2>
+      <p>
+        A tech-driven Computer Science graduate passionate about building real-world solutions using embedded systems,
+        full-stack development, and AI-based automation. Proven ability to take projects from concept to deployment,
+        especially in assistive tech and geospatial data visualization. Eager to contribute as a system software engineer
+        with a mission-driven mindset.
+      </p>
+    </section>
+
+    <hr/>
+
+    <section id="education">
+      <h2>🎓 Education</h2>
+      <ul>
+        <li><strong>B.Tech in Computer Science and Engineering</strong> — Amity University Mumbai (2021–2025), CGPA: 7.81</li>
+        <li><strong>Senior Secondary Education (Class XII)</strong> — Army Public School, Pune (2020–2021), Percentage: 88%</li>
+        <li><strong>Secondary Education (Class X)</strong> — Army Public School, Pune (2018–2019), Percentage: 86.17%</li>
+      </ul>
+    </section>
+
+    <hr/>
+
+    <section id="internship">
+      <h2>💼 Internship</h2>
+      <ul>
+        <li>
+          <strong>Full Stack Development Intern</strong> — ONGC Mumbai (June–July 2024)
+          <ul>
+            <li>Developed a full-stack web portal for ONGC’s Hospitality & Welfare Section.</li>
+            <li>Used PHP, MySQL, and Bootstrap with LDAP login fallback and alert systems.</li>
+            <li>Created real-time dashboards for admins and users.</li>
+            <li><a href="https://drive.google.com/drive/folders/1Ejxy70BlqmhrowlOZQ8MhjfAOStE4yom" target="_blank">Internship Report, Certificates, LOI</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <hr/>
+
+    <section id="skills">
+      <h2>🛠️ Technical Skills</h2>
+      <ul>
+        <li>Languages: Java, Python, C, HTML/CSS, JavaScript, PHP</li>
+        <li>Frameworks & Tools: Jetpack Compose, Flask, Firebase, Arduino, MySQL, Git</li>
+        <li>Embedded Tech: ESP32, SIM900A/SIM7600EH, Ultrasonic, ToF, GPS, Flame, SD card</li>
+        <li>Others: PlatformIO, Leaflet.js, Google Maps API, Android Studio</li>
+        <li>Operating Systems: Windows, Ubuntu</li>
+      </ul>
+    </section>
+
+    <hr/>
+
+    <section id="achievements">
+      <h2>🏆 Achievements & Activities</h2>
+      <ul>
+        <li>Final-year major project accepted under Dr. Shweta Kukreja</li>
+        <li>Participated in national-level Hackathons</li>
+        <li>Preparing for GATE 2026</li>
+        <li>10+ self-built software and IoT projects deployed/tested</li>
+      </ul>
+    </section>
+
+    <hr/>
+
+    <section id="projects">
+      <h2>📁 Projects</h2>
+      <ol>
+        <li>
+          <a href="https://drive.google.com/drive/u/0/folders/13vmhkAiqqha00u8L8-1YrA5hgAx2Owc7" target="_blank">
+            <strong>Smart Blind Stick for Automated Alert Detection</strong>
+          </a>
+          <ul>
+            <li>Built with ESP32, SIM900A, NEO-6M GPS, and multiple sensors</li>
+            <li>Alerts sent via SMS and Firebase to Android Jetpack Compose app</li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://drive.google.com/drive/u/0/folders/1ZxAYKkms7HAH0X4k7y7tTIkRl--d02mL" target="_blank">
+            <strong>Language Learning Assistant for Deaf</strong>
+          </a>
+          <ul>
+            <li>Python GUI with sign language videos and voice-to-text conversion</li>
+          </ul>
+        </li>
+        <li><strong>Satellite NDVI Time-Series Viewer</strong>
+          <ul>
+            <li>Flask + Leaflet.js tool to visualize NDVI using NASA MODIS & GeoTIFF</li>
+          </ul>
+        </li>
+        <li><strong>Phone Number Information Finder</strong>
+          <ul>
+            <li>Python Flask app using phonenumbers to display carrier, region, and timezone</li>
+          </ul>
+        </li>
+        <li><strong>Dynamic Malls of Mumbai Website</strong>
+          <ul>
+            <li>HTML/CSS/JS + Bootstrap website featuring tourist info and images</li>
+          </ul>
+        </li>
+        <li><strong>Tip Calculator (Android Mini Project)</strong>
+          <ul>
+            <li>Kotlin-based Android app to calculate tips and bill split</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Hem Pathak. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const burger = document.getElementById('hamburger');
+    const nav = document.getElementById('navbar');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('mobile');
+    });
+  </script>
+</body>
+</html>
